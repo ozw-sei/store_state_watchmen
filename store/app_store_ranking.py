@@ -28,7 +28,7 @@ class AppStoreRanking:
 
     def fetch_parse_xml(self, url):
         parsed = feedparser.parse(url)
-        return [self.__build_dict(e, index + 1) for e, index in zip(parsed.entries, range(len(parsed.entries)))]
+        return [self.__build_dict(e, i + 1) for i, e in enumerate(parsed.entries)]
 
     @staticmethod
     def __extract_app_id(raw_id):
@@ -52,4 +52,3 @@ class AppStoreRanking:
             self.target = d
 
         return d
-
