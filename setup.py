@@ -5,7 +5,7 @@ sys.path.append('./src')
 sys.path.append('./tests')
 
 setup(
-    name = 'store review watchmen',
+    name = 'store_state_watchmen',
     version = '0.1',
     description='This is test codes for travis ci',
     packages = find_packages(),
