@@ -6,7 +6,7 @@ from store.app_store_ranking import AppStoreRanking
 
 class AppStoreRankingTest(unittest.TestCase):
     def setUp(self):
-        stub_file_url = "appstore.xml"
+        stub_file_url = "store/appstore.xml"
         self.app_id = "1094591345"  # pockemon go
         self.thing = AppStoreRanking(self.app_id, {})
         self.thing.get_url = MagicMock(return_value=stub_file_url)
