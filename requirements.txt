@@ -1,2 +1,1 @@
-feedparser==5.2.1
-virtualenv==15.0.2
+-r requirements/base.txt
