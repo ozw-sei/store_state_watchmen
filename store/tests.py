@@ -23,6 +23,7 @@ class AppStoreRankingTest(unittest.TestCase):
 
         thing.fetch_ranking()
         rank = thing.rank
+        target = self.thing.target
 
         self.assertEqual(rank, 0)
 
