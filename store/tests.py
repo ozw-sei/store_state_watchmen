@@ -1,6 +1,5 @@
 import unittest
 from unittest.mock import MagicMock
-
 from store.app_store_ranking import AppStoreRanking
 
 
@@ -26,6 +25,7 @@ class AppStoreRankingTest(unittest.TestCase):
         target = self.thing.target
 
         self.assertEqual(rank, 0)
+        self.assertEqual(target.get("app_id"), None)
 
 
     def test_app_store_ranking_taget_is_pockemongo(self):
